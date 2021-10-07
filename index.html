@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Progate Week 3 - Fizzbuzz</title>
+    </head>
+    
+    <body>
+        <h1>Program Fizzbuzz</h1>
+        
+        <script>
+            let result = " ";
+            
+            for (let i = 1; i <= 100; i++) {
+                if (i % 3 === 0) {
+                    if (i % 5 === 0) {
+                        result += "Fizzbuzz! ";
+                    } else {
+                        result += "Fizz! ";
+                    }
+                } else if (i % 5 === 0) {
+                    result += "Buzz! ";
+                } else {
+                    result += `${i} `;
+                };
+            };
+            
+            document.write(result);
+        </script>
+        
+    </body>
+</html>
